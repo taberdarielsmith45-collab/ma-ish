@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Message For You</title>
+    
+    <!-- Links your standalone external CSS style sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Please hear what my heart says</h1>
+        <p class="subtitle">Press play whenever you're ready to listen.</p>
+
+        <div class="audio-wrapper" id="playerContainer">
+            <div class="pulse-ring"></div>
+            <button class="play-btn" id="playToggle" aria-label="Play audio message">
+                <!-- This image source swaps automatically between pause and play states via script.js -->
+                <img src="flower-pause.png" id="buttonImage" alt="Flower Button">
+            </button>
+        </div>
+
+        <div class="status" id="statusText">Click to listen</div>
+    </div>
+
+    <!-- Points straight to your uploaded voice memo file -->
+    <audio id="voiceNote" src="message.mp3"></audio>
+
+    <!-- Links your interaction script file -->
+    <script src="script.js"></script>
+</body>
+</html>
